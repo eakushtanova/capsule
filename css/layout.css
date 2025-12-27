@@ -1,0 +1,623 @@
+body {
+    width: 1280px;
+    margin: 0 auto;
+    display: block;
+}
+.hero {
+    position: relative;
+    height: 800px;
+    background-color: #4868D0;
+}
+.hero_image {
+    position: absolute;
+    width: 1062px;
+    height: 664px;
+    left: 50%;
+    margin-left: -531px;
+    padding-top: 52px;
+    z-index: 1;
+}
+.group1 {
+    position: absolute;
+    margin-left: 227px;
+    padding-top: 6px;
+    z-index: 0;
+    animation-duration: 1.25s, 1s;
+    animation-name: clothes, rotation;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in, ease-in-out;
+    animation-delay: 0s, 1.25s;
+    
+}
+.group2 {
+    position: absolute;
+    padding-top: 20px;
+    z-index: 0;
+    animation-duration: 1s, 1s;
+    animation-name: clothes, rotation1;
+    animation-iteration-count: 1, infinite; 
+    animation-timing-function: ease-in, ease-in-out;
+    animation-delay: 0s, 1s;
+}
+.group3 {
+    position: absolute;
+    padding-top: 59px;
+    margin-left: 39px;
+    z-index: 0;
+    animation-duration: 1s, 1s;
+    animation-name: clothes, rotation2;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in, ease-in-out;
+    animation-delay: 0s, 1s;
+}
+.group4 {
+    position: absolute;
+    margin-left: 39px;
+    z-index: 0;
+    animation-duration: 1.1s, 1s;
+    animation-name: clothes, rotation3;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in, ease-in-out;
+    animation-delay: 0s, 1.1s;
+  
+}
+.group5 {
+    position: absolute;
+    margin-left: 185px;
+    padding-top: -38px;
+    z-index: 0;
+    animation-duration: 1.2s,1s;
+    animation-name: clothes, rotation4;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in, ease-in-out;
+    animation-delay: 0s, 1.2s;
+
+}
+@keyframes clothes {
+    from {
+        margin-top: -70%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+@keyframes rotation {
+    from {
+        transform:rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(5deg);
+    }
+}
+@keyframes rotation1 {
+    from {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-4deg);
+    }
+}
+@keyframes rotation2 {
+    from {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(2deg);
+    }
+}
+@keyframes rotation3 {
+    from {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(3deg);
+    }
+}
+@keyframes rotation4 {
+    from {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-5deg);
+    }
+}
+.second {
+    position: relative;
+    height: 822px;
+    background-color: #F0ECE7;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.title1 {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 108.5%;
+    color: #4868D0;
+    text-align: center;
+    padding-top: 53px;
+    animation-duration: 2s;
+    animation-name: start;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes start {
+    from {
+        margin-left: -145%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+.outfits {
+    position: absolute;
+    padding-top: 275px;
+    animation-duration: 17s;
+    animation-name: slidein1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slidein1 {
+    0% {
+            transform: translateX(0%);
+        }
+    
+    100% {
+            transform: translateX(50%);
+        }
+}
+
+.third {
+    position: relative;
+    height: 178px;
+    background-color: #4868D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.title2 {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 90px;
+    color: #F0ECE7;
+    white-space: nowrap;
+    animation-duration: 5s;
+    animation-name: slidein2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes slidein2 {
+    from {
+       transform: translateX(116%);
+    }
+    to {
+        transform: translateX(-116%);
+    }
+}
+.fourth {
+    position: relative;
+    height: 814px;
+    background-color: #F0ECE7;
+    display: flex;
+}
+.paragraph {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 95%;
+    color: #4868D0;
+    white-space: nowrap;
+    margin-left: 676px;
+    padding-top: 67px;
+    animation-duration: 1s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.paragraph1 {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 95%;
+    color: #F0ECE7;
+    white-space: nowrap;
+    margin-left: 676px;
+    padding-top: 557px;
+    z-index: 2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes appear {
+    from {
+        margin-left: 100%;
+    }
+    to {
+         margin-left: 676px;
+    }
+    
+}
+.rectangle-container {
+    padding-top: 541px;
+    padding-left: 662px;
+}
+.rectangle {
+    position: absolute;
+    width: 618px;
+    height: 218px;
+    background-color: #4868D0;
+    z-index: 0;
+}
+.create {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 85px;
+    line-height: 95%;
+    color: #F0ECE7;
+    margin-left: 676px;
+    padding-top: 661px;
+    z-index: 2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.girl {
+    position: absolute;
+    margin-left: 17px;
+}
+.combi {
+    position: absolute;
+    margin-left: 19px;
+    padding-top: 36px;
+    animation-duration: 2s;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes move {
+    from {
+        margin-left: 19px;
+        padding-top: 36px;
+    }
+    50% {
+         margin-left: 236px;
+        padding-top: 155px;
+    }
+    70% {
+        margin-left: 236px;
+        padding-top: 155px;
+    }
+    to {
+        margin-left: 19px;
+        padding-top: 36px;
+    }
+}
+.dress {
+    position: absolute;
+    margin-left: 0px;
+    padding-top: 361px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-name: movement;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes movement {
+    from {
+        margin-left: 0px;
+        padding-top: 361px;
+    }
+
+    50% {
+        margin-left: 206px;
+        padding-top: 102px;
+    }
+    70% {
+        margin-left: 206px;
+        padding-top: 102px;
+    }
+
+    to {
+        margin-left: 0px;
+        padding-top: 361px;
+    }
+}
+.jeanscomb {
+    position: absolute;
+    margin-left: 333px;
+    padding-top: 102px;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: movement2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes movement2 {
+    from {
+        margin-left: 333px;
+        padding-top: 102px;
+    }
+
+    50% {
+        margin-left: 133px;
+        padding-top: 141px;
+    }
+    70% {
+        margin-left: 133px;
+        padding-top: 141px;
+    }
+    to {
+        margin-left: 333px;
+        padding-top: 102px;
+    }
+}
+.fifth {
+    position: relative;
+    height: 800px;
+    background-color: #F0ECE7;
+    display: flex;
+}
+.pocket {
+    position: absolute;
+    animation-duration: 1.2s;
+    animation-name: looks;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.bag {
+    position: absolute;
+    padding-top: 282px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.full {
+    position: absolute;
+    margin-left: 427px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.shoes {
+    position: absolute;
+    margin-left: 853px;
+    animation-duration: 0.4s;
+    animation-name: looks;
+    animation-delay: 0.8s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.face {
+    position: absolute;
+    margin-left: 853px;
+    padding-top: 400px;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    animation-name: looks;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.bag1 {
+    position: absolute;
+    opacity: 0;
+    animation-duration: 1.2s;
+    animation-name: looks;
+    animation-delay: 1.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.jeans1 {
+    position: absolute;
+    padding-top: 282px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 2.4s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.full1 {
+    position: absolute;
+    margin-left: 427px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 2.2s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.shoes1 {
+    position: absolute;
+    margin-left: 853px;
+    animation-duration: 0.4s;
+    animation-name: looks;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.shirt1 {
+    position: absolute;
+    margin-left: 853px;
+    padding-top: 400px;
+    animation-duration: 1.2s;
+    animation-delay: 1.8s;
+    animation-name: looks;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.pocket2 {
+    position: absolute;
+    animation-duration: 1.2s;
+    animation-name: looks;
+    opacity: 0;
+    animation-delay: 3.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.bag2 {
+    position: absolute;
+    padding-top: 282px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 3.6s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.full2 {
+    position: absolute;
+    margin-left: 427px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 3.8s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.shoes2 {
+    position: absolute;
+    margin-left: 853px;
+    animation-duration: 0.4s;
+    animation-name: looks;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.face2 {
+    position: absolute;
+    margin-left: 853px;
+    padding-top: 400px;
+    animation-duration: 1.2s;
+    animation-delay: 3.4s;
+    animation-name: looks;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.bag3 {
+    position: absolute;
+    opacity: 0;
+    animation-duration: 1.2s;
+    animation-name: looks;
+    animation-delay: 4.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.jeans3 {
+    position: absolute;
+    padding-top: 282px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 5.2s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.full3 {
+    position: absolute;
+    margin-left: 427px;
+    animation-duration: 1s;
+    animation-name: looks;
+    animation-delay: 5.4s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.shoes3 {
+    position: absolute;
+    margin-left: 853px;
+    animation-duration: 0.4s;
+    animation-name: looks;
+    animation-delay: 5.6s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.shirt3 {
+    position: absolute;
+    margin-left: 853px;
+    padding-top: 400px;
+    animation-duration: 1.2s;
+    animation-delay: 5s;
+    animation-name: looks;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.logo2 {
+    position: absolute;
+    margin-left: 495px;
+    padding-top: 309px;
+    animation-duration: 25s;
+    animation-delay: 6.4s;
+    animation-name: looks;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}   
+@keyframes looks {
+    from {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1
+    }
+    to {
+        opacity: 1;
+    }
+}
